@@ -491,6 +491,8 @@ macro_rules! entry {
 entry! {
     /// Title of the item.
     "title" => title: FormatString,
+    /// Short title of the item
+    "title-short" => titleShort: FormatString,
     /// Persons primarily responsible for creating the item.
     #[serde(serialize_with = "serialize_one_or_many_opt")]
     #[serde(deserialize_with = "deserialize_one_or_many_opt")]
